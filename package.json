@@ -1,0 +1,51 @@
+{
+  "name": "@tuansdf/template-node-cli",
+  "version": "1.0.0",
+  "description": "A node cli",
+  "main": "dist/src/cli.js",
+  "type": "module",
+  "bin": {
+    "@tuansdf/template-node-cli": "dist/bin/tnc",
+    "tnc": "dist/bin/tnc"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "cli",
+    "tnc"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "author": "tuansdf",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^20.12.12",
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@typescript-eslint/parser": "^7.9.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "rollup": "^4.17.2",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cheerio": "1.0.0-rc.12",
+    "commander": "^12.1.0",
+    "zod": "^3.23.8"
+  }
+}
